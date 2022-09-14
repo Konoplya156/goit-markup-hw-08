@@ -152,7 +152,7 @@ header .conteiner {
   }
 }
 
-.nav-conteiner {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
