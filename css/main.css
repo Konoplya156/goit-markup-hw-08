@@ -1840,6 +1840,13 @@ header .conteiner {
             justify-content: flex-start;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .section-btn-item :focus {
   color: var(--primery-white-color);
@@ -1934,7 +1941,6 @@ header .conteiner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .example {
