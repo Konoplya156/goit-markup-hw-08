@@ -34,7 +34,7 @@
 .items-photo {
     @media screen and(min-width:1200px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     }
         
     @media screen and (min-width:320px) and (max-width:1199px) {
