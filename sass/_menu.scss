@@ -1,0 +1,121 @@
+.menu-button {
+    display: block;
+    margin-left: auto;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 48px;
+
+    >.mob-conteiner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 40px;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    }
+}
+
+.menu-close {
+    display: block;
+    margin-left: auto;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-close:hover .menu-button__icon--close {
+    fill: #2196f3;
+}
+
+.mob-menu__list .mob-menu__link--current {
+    color: var(--link-hover-color);
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-menu__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.menu-contact {
+    margin-bottom: 64px;
+}
+
+.menu-contact__item {
+    margin-bottom: 19px;
+}
+
+.menu-contact__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+}
+
+.menu-social {
+    display: flex;
+}
+
+.menu-social__item {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__item:first-child {
+    padding-left: 0;
+}
+
+.menu-social__item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.menu-social__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+}

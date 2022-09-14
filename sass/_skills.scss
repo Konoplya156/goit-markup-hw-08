@@ -1,0 +1,147 @@
+.skills-soc__icon {
+    fill: #212121
+}
+
+.skill-container{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    @media screen and (min-width:320px) and(max-width:480px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    
+    @media screen and (min-width:480px) {
+    width: 450px;
+    }
+    
+    @media screen and (min-width:768px) {
+    width: 738px;
+    }
+    
+    @media screen and (min-width:1200px) {
+    width: 100%;
+    }
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and(min-width:1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    }
+    
+    @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    }
+    
+    @media screen and(min-width:480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+}
+
+
+.skills-list__text {
+    margin-right: 30px;
+    max-width: 270px;
+    @media screen and(min-width:768px) {
+    width: 354px;
+    }
+    
+    @media screen and(min-width:1200px) {
+    width: 270px;
+    }
+
+}
+
+
+.skill__page {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+    @media screen and(min-width:320px) and(max-width:480px) {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+   
+}
+
+.skills__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
+    @media screen and(min-width:320px) and(max-width:480px) {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+}
+
+.skill {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @media screen and (min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    }
+}
+
+
+.skill-text:last-child {
+    margin-right: 0;
+}
+
+
+.skills-soc__link {
+    height: 120px;
+    border: #F5F4FA;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.skills-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.skill__page+ p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}

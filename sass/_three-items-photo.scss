@@ -1,0 +1,93 @@
+.services-text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    min-height: 70px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.photo-tree,
+.team-img,
+.example-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.tree-photo {
+    padding-bottom: 94px;
+}
+
+.items-photo {
+    @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+    }
+        
+    @media screen and (min-width:320px) and (max-width:1199px) {
+    display: none;
+    }
+}
+
+
+.photo{
+    @media screen and (min-width:1200px) {
+    position: relative;
+    height: 294px;
+    width: 370px;}
+        
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    }
+
+    }
+
+
+.about-item-cards {
+    position: relative
+}
+
+
+
+.photo>.services-text {
+    @media screen and (min-width:1200px) {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        // height: 70px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin: 0;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primery-white-color);
+
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        display: none;
+    }
+
+
+
+}
