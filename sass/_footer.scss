@@ -183,7 +183,6 @@ display: flex;
 justify-content: normal;
 align-items: flex-start;
 margin-right: 70px;
-margin-left: 0px;
 margin-bottom: 0px;
 }
 }
@@ -374,10 +373,13 @@ align-items: flex-start;
 .footer-after{
 @media screen and(min-width:320px) {
 margin-bottom: 60px;
+flex-direction: column;
+
 }
     
 @media screen and(min-width:480px) {
-
+display: flex;
+margin-left: 25px;
 
 }
     
@@ -393,7 +395,7 @@ margin-bottom: 0px;
 }
     
 @media screen and(min-width:1200px) {
-display: block;
+
 width: 206px;
 height: 80px;
 margin-right: 93px;
