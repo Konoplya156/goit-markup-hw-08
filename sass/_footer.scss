@@ -170,6 +170,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-bottom: 60px;
+
 margin-right: auto;
     }
 
@@ -237,7 +238,7 @@ align-items: center;
             flex-wrap: wrap;
             justify-content: center;
             margin-left: auto;
-           
+            margin-right: auto;
         }
     
         @media screen and(min-width:480px) {
@@ -247,7 +248,7 @@ align-items: center;
             align-items: center;
             justify-content: center;
             margin-left: auto;
-            
+            margin-right: auto;
         }
     
         @media screen and(min-width:1200px) {
