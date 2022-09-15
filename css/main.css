@@ -120,7 +120,7 @@ ul {
 }
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: #ECECEC;
 }
 header .conteiner {
   margin: 0 auto;
@@ -592,6 +592,10 @@ header .conteiner {
   .mob-menu > .mob-conteiner {
     width: 480px;
   }
+}
+
+.mob-menu__item--current {
+  color: #2196f3;
 }
 
 .menu-close {
@@ -1932,17 +1936,18 @@ header .conteiner {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
-  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .example {
-    padding-left: 0;
-    padding-right: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
   }
 }
-
 .example-title {
   font-weight: 700;
   font-size: 18px;
