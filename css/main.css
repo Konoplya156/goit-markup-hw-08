@@ -66,9 +66,14 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -120,7 +125,7 @@ ul {
 }
 
 header {
-  border-bottom: #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 header .conteiner {
   margin: 0 auto;
@@ -1210,7 +1215,6 @@ header .conteiner {
 }
 
 .skills-list__text {
-  margin-right: 30px;
   max-width: 270px;
 }
 @media screen and (min-width: 768px) {
@@ -2286,7 +2290,6 @@ header .conteiner {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
-    margin-left: auto;
     margin-right: auto;
   }
 }
