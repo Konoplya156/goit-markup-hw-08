@@ -120,7 +120,7 @@ ul {
 }
 
 header {
-  border-bottom: #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 header .conteiner {
   margin: 0 auto;
