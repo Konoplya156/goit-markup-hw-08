@@ -18,7 +18,6 @@
 }
 
 .photo-tree,
-.team-img,
 .example-photo {
     display: block;
     max-width: 100%;
@@ -28,6 +27,9 @@
 
 
 .tree-photo {
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
     padding-bottom: 94px;
 }
 

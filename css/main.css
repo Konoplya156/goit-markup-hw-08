@@ -661,6 +661,8 @@ header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu-social__item {
@@ -1009,6 +1011,7 @@ header .conteiner {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
+  resize: none;
 }
 
 .backdrop {
@@ -1095,8 +1098,8 @@ header .conteiner {
   .hero__title {
     max-width: 1600px;
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop-img/img1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/img1.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-resolution: 192dpi), (min-resolution: 192dpi) and (min-resolution: 2dppx), (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) and (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-resolution: 2dppx) {
@@ -1251,8 +1254,13 @@ header .conteiner {
 }
 
 .skills-list__text {
-  margin-right: 30px;
+  margin-bottom: 30px;
   max-width: 270px;
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .skills-list__text {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .skills-list__text {
@@ -1299,14 +1307,16 @@ header .conteiner {
   }
 }
 
-.skill {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 @media screen and (min-width: 1200px) {
   .skill {
     padding-bottom: 94px;
     padding-top: 94px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .skill {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1374,7 +1384,6 @@ header .conteiner {
 }
 
 .photo-tree,
-.team-img,
 .example-photo {
   display: block;
   max-width: 100%;
@@ -1383,6 +1392,11 @@ header .conteiner {
 
 .tree-photo {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .tree-photo {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1487,11 +1501,6 @@ header .conteiner {
   background-color: #2196F3;
 }
 
-.team-img {
-  display: block;
-  width: 100%;
-}
-
 .team-title {
   font-weight: 700;
   font-size: 28px;
@@ -1524,9 +1533,6 @@ header .conteiner {
   width: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .team-item {
-    margin-bottom: 30px;
-  }
   .team-item:last-child {
     margin-bottom: 0px;
   }
@@ -1831,11 +1837,6 @@ header .conteiner {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .section-btn-item {
-    gap: 8px 15px;
-  }
-}
 .section-btn-item:last-child {
   margin-right: 0;
 }
@@ -1845,7 +1846,7 @@ header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1854,7 +1855,7 @@ header .conteiner {
   .section-btn {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -1876,6 +1877,21 @@ header .conteiner {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.section-btn-item {
+  margin-right: 8px;
+  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-btn-item:last-child {
+    padding-bottom: 30px;
+  }
+}
+
+.section-btn-item:last-child {
+  margin-right: 0;
 }
 
 .section-btn-item :focus {
@@ -2090,26 +2106,6 @@ header .conteiner {
   .example-img-one .example-img-one {
     background-image: url("../images/wed-site-2x.jpg");
   }
-}
-
-.section-btn-item {
-  margin-right: 8px;
-  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .section-btn-item:last-child {
-    padding-bottom: 25px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-btn-item:last-child {
-    padding-bottom: 30px;
-  }
-}
-
-.section-btn-item:last-child {
-  margin-right: 0;
 }
 
 .footer {
