@@ -170,8 +170,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-bottom: 60px;
-
-margin-right: auto;
+text-align: center;
     }
 
 @media screen and(min-width:768px) {
@@ -385,11 +384,9 @@ margin-left: 25px;
     
 @media screen and(min-width:768px) {
 display: flex;
-flex-wrap: wrap;
 justify-content: center;
 width: 206px;
 height: 80px;
-margin-right: 74px;
 margin-left: 0px;
 margin-bottom: 0px;
 }

@@ -121,6 +121,7 @@ header {
 
 .site-nav__link--current {
     color: #2196f3;
+    bottom: -1px;
 
     &::after {
         content: '';
