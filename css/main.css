@@ -277,7 +277,6 @@ header .conteiner {
 
 .site-nav__link--current {
   color: #2196f3;
-  bottom: -1px;
 }
 .site-nav__link--current::after {
   content: "";
@@ -615,7 +614,7 @@ header .conteiner {
 }
 
 .mob-menu__list .mob-menu__link--current {
-  color: var(--link-hover-color);
+  color: #2196f3;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -1189,16 +1188,6 @@ header .conteiner {
     padding-right: 0px;
   }
 }
-@media screen and (min-width: 480px) {
-  .skill-container {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .skill-container {
-    width: 738px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .skill-container {
     width: 100%;
@@ -1255,21 +1244,41 @@ header .conteiner {
 }
 
 .skills-list__text {
-  max-width: 1200px;
+  width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .skills-list__text {
-    text-align: center;
-  }
+.skills-list__text::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.skills-list__text:nth-child(1)::before {
+  background-image: url(../images/icons/SVG/antenna.svg);
+}
+.skills-list__text:nth-child(2)::before {
+  background-image: url(../images/icons/SVG/clock.svg);
+}
+.skills-list__text:nth-child(3)::before {
+  background-image: url(../images/icons/SVG/diagram.svg);
+}
+.skills-list__text:nth-child(4)::before {
+  background-image: url(../images/icons/SVG/astronaut.svg);
+}
+.skills-list__text:nth-child(n) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .skills-list__text {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .skills-list__text {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
