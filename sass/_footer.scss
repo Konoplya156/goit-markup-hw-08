@@ -12,6 +12,7 @@
     margin-bottom: 9px;
     }
     &-item {
+    text-align: start;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -61,7 +62,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: start;
         }
     &-soc-link {
     width: 44px;
@@ -377,24 +378,16 @@ flex-direction: column;
 }
     
 @media screen and(min-width:480px) {
-display: flex;
 margin-left: 25px;
 
 }
     
 @media screen and(min-width:768px) {
-display: flex;
-justify-content: center;
-width: 206px;
-height: 80px;
 margin-left: 0px;
 margin-bottom: 0px;
 }
     
 @media screen and(min-width:1200px) {
-
-width: 206px;
-height: 80px;
 margin-right: 93px;
 }
 }

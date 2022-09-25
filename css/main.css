@@ -2127,6 +2127,7 @@ header .conteiner {
   margin-bottom: 9px;
 }
 .footer-item {
+  text-align: start;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2174,7 +2175,7 @@ header .conteiner {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
 .footer-soc-link {
   width: 44px;
@@ -2599,30 +2600,17 @@ header .conteiner {
 }
 @media screen and (min-width: 480px) {
   .footer-after {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 25px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-after {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 206px;
-    height: 80px;
     margin-left: 0px;
     margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-after {
-    width: 206px;
-    height: 80px;
     margin-right: 93px;
   }
 }/*# sourceMappingURL=main.css.map */
