@@ -341,8 +341,20 @@
                     <li class="example-item">
                         <a href="" class="example-item-cursor link">
                         <div class="example-top-wrap">
-                        <img src="./images/labtag-1.jpg" alt="project"
-                                width="370" height="294" class="example-photo">
+                        <picture>
+                            <source srcset="
+                                              ./images/desktop-img/work-ex8.jpg    1x,
+                                              ./images/desktop-img/work-ex8@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                              ./images/tablet-img/work-ex8.jpg    1x,
+                                              ./images/tablet-img/work-ex8@2x.jpg 2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                              ./images/mobile-img/work-ex8.jpg    1x,
+                                              ./images/mobile-img/work-ex8@2x.jpg 2x
+                                            " media="(max-width: 767px)" />
+                            <img class="work-img" src="./images/LAB.jpg" alt="Проект LAB" width="370" height="294" />
                                 <p class="example-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
